@@ -1,0 +1,21 @@
+# Sierpinski triangle
+# ===================
+
+variables: A, B, p, m
+start: A
+rules: (A -> BmAmB), (B -> ApBpA)
+
+# Iterations
+runIters: 7
+
+# Drawing parameters (optional)
+drawingReductionScale: 4
+drawingInitPos: -175, -100
+drawingInitAng: 30
+
+# Turtle graphics
+tg A: drawForward 10
+tg B: drawForward 10
+tg p: turnLeft 60
+tg m: turnRight 60
+

@@ -1,0 +1,22 @@
+# Fractal plant
+# =============
+
+variables: X, F, p, m, 6, 9
+start: X
+rules: (X -> Fm66X9pX9pF6pFX9mX), (F -> FF)
+
+# Iterations
+runIters: 5
+
+# Drawing parameters (optional)
+drawingReductionScale: 2
+drawingInitPos: 0, -225
+drawingInitAng: 0
+
+# Turtle graphics
+tg F: drawForward 10
+tg m: turnLeft 25
+tg p: turnRight 25
+tg 6: pushPos, pushAng
+tg 9: popPos, popAng
+

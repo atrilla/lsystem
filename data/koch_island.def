@@ -1,0 +1,20 @@
+# Quadratic Koch island
+# =====================
+
+variables: F, p, m
+start: FpFpFpF 
+rules: (F -> FpFmFmFFpFpFmF)
+
+# Iterations
+runIters: 3
+
+# Drawing parameters (optional)
+drawingReductionScale: 3
+drawingInitPos: -100, -100 
+# drawingInitAng: 0
+
+# Turtle graphics
+tg F: drawForward 10
+tg p: turnRight 90
+tg m: turnLeft 90
+

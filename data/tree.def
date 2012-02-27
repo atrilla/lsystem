@@ -1,0 +1,22 @@
+# Tree
+# ====
+
+variables: F, p, m, u, o
+start: F
+rules: (F -> FumFoFupFouFo)
+
+# Iterations
+runIters: 3 
+
+# Drawing parameters (optional)
+drawingReductionScale: 1
+drawingInitPos: 0, -225
+# drawingInitAng: 0
+
+# Turtle graphics
+tg F: drawForward 20
+tg p: turnRight 30
+tg m: turnLeft 30
+tg u: pushPos, pushAng
+tg o: popPos, popAng
+

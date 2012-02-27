@@ -1,0 +1,20 @@
+# Dragon curve
+# ============
+
+variables: X, Y, F, p, m
+start: FX
+rules: (X -> XpYF), (Y -> FXmY)
+
+# Iterations
+runIters: 9
+
+# Drawing parameters (optional)
+drawingReductionScale: 1
+drawingInitPos: -50, -50
+drawingInitAng: 0
+
+# Turtle graphics
+tg F: drawForward 10
+tg m: turnLeft 90
+tg p: turnRight 90
+

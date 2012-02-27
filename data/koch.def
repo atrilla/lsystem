@@ -1,0 +1,19 @@
+# Koch curve
+# ==========
+
+variables: F, p, m
+start: F
+rules: (F -> FpFmFmFpF)
+
+# Iterations
+runIters: 4
+
+# Drawing parameters (optional)
+drawingReductionScale: 1
+drawingInitPos: -150, -200 
+drawingInitAng: 90
+
+# Turtle graphics
+tg F: drawForward 10
+tg p: turnLeft 90
+tg m: turnRight 90

@@ -1,0 +1,20 @@
+# Algae
+# =====
+
+variables: 0, 1, p, P
+start: 0
+rules: (1 -> 11), (0 -> 1p0P0)
+
+# Iterations
+runIters: 7
+
+# Drawing parameters (optional)
+drawingReductionScale: 5 
+drawingInitPos: 0, -225
+# drawingInitAng: 0
+
+# Turtle graphics
+tg 0: drawForward 10
+tg 1: drawForward 20
+tg p: pushPos, pushAng, turnLeft 45
+tg P: popPos, popAng, turnRight 45
